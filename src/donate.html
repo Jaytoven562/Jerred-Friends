@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerred & Friends</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/dad6b99985.css" crossorigin="anonymous">
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+header,   section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #25bfcd, #ffffff);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+ mt-20{
+    
+        margin-top: 100px;
+      }
+      
+
+header a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(226, 241, 243);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header {
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  text-align: center;
+  width: 50%;
+}
+
+img {
+  max-width: 500px;
+  height: 470px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 23%;
+  border: none;
+
+}
+
+p,.text-box {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.text-box {
+    border: 5px solid #25bfcd;
+    padding: 15px;
+    background-color:aliceblue
+    
+  }
+
+
+  
+  
+
+
+
+    </style>
+    
+  
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg ">
+                  <a class="navbar-brand" href="#">Jerred & Friends</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="mr-auto">
+
+                    </div>
+
+                    </div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="adoption.html">Adopt</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Donate.html">Donate</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Animal Health
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.understandinganimalresearch.org.uk/news/why-vaccinate-your-pets">Vaccinations</a></li>
+                          <li><a class="dropdown-item" href="#">Spay/Neuter</a></li>
+                          <li><a class="dropdown-item" href="#">Nutrition</a></li>
+                          <li><a class="dropdown-item" href="#">Exercise</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="Sponsors.html">Sponsors</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Admin-login.html">Admin Login</a>
+                      </li>
+
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+        </div>
+        <div class="container text-center  ">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-sm-12 ">
+                  <h1>Donate</h1>
+                <p>
+                    Donations are critical to the survival of animal shelters, and every contribution makes a difference in the lives of the animals they serve.
+                     Without donations, shelters would not be able to provide the necessary care and support for animals in need, including food, medical attention, and shelter.
+                      Unfortunately, many shelters struggle to stay open due to lack of funding, which means that countless animals are left without homes or care. 
+                      In fact, it's estimated that thousands of animal shelters across the country are forced to close their doors each year due to financial difficulties. 
+                      Your donation can make a direct impact on the lives of animals in need, helping to ensure that they receive the care and attention they deserve.
+                       Whether you're able to contribute a little or a lot, every dollar counts and can help make a difference in the lives of these furry friends.
+
+
+
+
+               </div>
+                <div class="col-md-5 col-sm-12">
+                    
+                    <img  src="/assets/Wishbone-Donations.jpg" alt="img-1" style="height: 380px; width: 600px;" > 
+                </div>
+            </div>
+        </div>
+        
+     
+
+    </header>
+
+    
+
+ 
+    <main> 
+        <div class="container">
+            <h1 style="text-decoration: underline;">How this helps us </h1>
+            <div class="row">
+              <div class="col">
+                <img src="/assets/pexels-mikhail-nilov-7474853.jpg" alt="Image 1">
+                <div class="text-box">
+                    <h1>Veterinary Care</h1>
+                  <p>Your donation can go towards providing veterinary care for our animals. 
+                    Just like humans, animals need regular check-ups and medical attention to stay healthy. 
+                    Your support can help us cover these costs and ensure that our animals receive the best possible care.
+                     Did you know that animal shelters spend an average of $12 billion per year on animal care and services? 
+                     This includes everything from routine check-ups and vaccinations to surgeries and other necessary medical treatments.
+                      We are grateful for any amount you can contribute and appreciate your support in our mission to provide loving homes and medical care for our furry friends.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="../assets/pexels-mart-production-8434637.jpg" alt="Image 2">
+                <div class="text-box">
+                      <h1>Dog/Cat Food</h1>
+                  <p> Your donation can also go towards providing food for the animals in our care. 
+                    It takes a lot of food to keep our furry friends well-fed and healthy, and your support can help us cover these costs. 
+                    Did you know that animal shelters spend an average of $2 billion per year on food for their animals? 
+                    That's because they have to feed a lot of mouths, and many animals require special diets to meet their unique nutritional needs. 
+                    By making a donation, you can help us ensure that our animals are well-fed and have everything they need to thrive. 
+                    We appreciate your support in our mission to provide loving homes and care for our four-legged friends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img src="../assets/istockphoto-1248454290-612x612.jpg" alt="Image 3">
+              <div class="text-box">
+                    <h1>Pet Supplies</h1>
+                <p> Donations are crucial for animal shelters to provide basic needs and comfort for the animals in their care.
+                     Funds received from donations help shelters purchase essential pet supplies such as beds, toys, kennels, leashes, and more. 
+                     These items are not only necessary for the well-being of the animals, but they also help create a more homely and comfortable environment for them. 
+                     Thanks to generous donations from individuals and organizations, shelters can continue to provide the best care possible for animals waiting to be adopted. 
+                     Every contribution, big or small, can make a significant impact on the lives of these animals.</p>
+              </div>
+            </div>
+          </div>
+          
+          
+    </main>
+
+    <footer style="background-color: #25bfcd;">
+<div class="container-fluid p-0">
+    <div class="row text-left">
+        <div class="col-md-5 col-md-5">
+        <h1 class="text-dark">About Us</h1>
+        <p class="text-muted">
+            We are a non-kill shelter! Every animal will find a home.
+        </p>
+        <p class="pt-4 text-muted">
+         Copyright @2023 All rights reserved | This website was made by <span>Jerred Gomez</span>.
+        </p>
+        </div>
+        <div class="col-md-5 text-center">
+            <h4 class="text-dark">Subscriber List</h4>
+            <p class="text-muted">Recieve Email Updates</p>
+            <form class="form-inline">
+                <div class="col pl-">
+                    <div class="input-group pr-5">
+                        <input type = "text" class="form-control bg-dark text-white" placeholder="Email">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa-solid fa-circle-arrow-right"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2">
+            <h4 class="text-dark">Follow Us</h4>
+            <p class="text-muted"> Connect with us on social media</p>
+        </div>
+    </div>
+   </div>
+ </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+</script>
+<script src="https://kit.fontawesome.com/dad6b99985.js" crossorigin="anonymous">
+
+</script>
+<script src="../code.js/index.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const dropdown = document.querySelector(".dropdown");
+      const dropdownToggle = dropdown.querySelector(".dropdown-toggle");
+      const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+  
+      dropdownToggle.addEventListener("click", function(event) {
+        event.preventDefault();
+        dropdownMenu.classList.toggle("show");
+      });
+    });
+  </script>
+
+
+
+    
+</body>
+</html>

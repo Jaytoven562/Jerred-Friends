@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerred & Friends</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/dad6b99985.css" crossorigin="anonymous">
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+header,   section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #25bfcd, #ffffff);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+ mt-20{
+    
+        margin-top: 100px;
+      }
+      
+
+header a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(226, 241, 243);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+
+header .nav-link:hover {
+  color: black;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header {
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+    </style>
+    
+  
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg ">
+                  <a class="navbar-brand" href="#">Jerred & Friends</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="mr-auto">
+
+                    </div>
+
+                    </div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="adoption.html">Adopt</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Donate.html">Donate</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Animal Health
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.understandinganimalresearch.org.uk/news/why-vaccinate-your-pets">Vaccinations</a></li>
+                          <li><a class="dropdown-item" href="#">Spay/Neuter</a></li>
+                          <li><a class="dropdown-item" href="#">Nutrition</a></li>
+                          <li><a class="dropdown-item" href="#">Exercise</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="Sponsors.html">Sponsors</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Admin-login.html">Admin Login</a>
+                      </li>
+
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+        </div>
+        <div class="container text-center  ">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-sm-12 ">
+                  <h1>Adoption!</h1>
+                <p>
+                  Animal adoption is crucial for many reasons. 
+                  When you adopt a pet, you are providing a forever home for an animal in need. 
+                  Adopting a pet also helps reduce the number of animals that end up in kill shelters, where millions of dogs and cats are euthanized each year due to overcrowding. 
+                  By adopting, you are not only saving the life of your new furry friend, but also freeing up space in the shelter for another animal in need. In the United States alone, approximately 6.5 million companion animals enter animal shelters every year, and of those, 1.5 million are euthanized. 
+                  By adopting instead of buying from a breeder, you are also helping to combat the unethical and inhumane practices of puppy mills and other irresponsible breeders. Adopting a pet can be a life-changing experience, both for you and your new furry friend.
+                </p>
+               </div>
+                <div class="col-md-5 col-sm-12  h-25 ">
+                    
+                    <img  src="../assets/istockphoto-1186973591-170667a.jpg" alt="img-1" style="height: 350px; width: 600px;" > 
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+      <section class="section4">
+        <div class="container text-center">
+          <h1 class="text-dark">Adopt one of our beautiful animals today!</h1>
+          <p class="text-secondary">Come see them on location !</p>
+        </div>
+        <!--Card 1-->
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-12">
+            <div class="card shadow-lg mb-5">
+              <img src="../assets/istockphoto-1306543850-612x612.jpg" class="card-img-top" alt="Adoption">
+              <div class="card-body">
+                <h3 class="card-title">Milo and Kilo</h3>
+                <p class="card-text">We found Milo and kilo together, and that's the way they have to stay! These two are inseperable. Come see them today!</p>
+                <a href="#" class="text-secondary text-decoration-none">Rescued two Months ago.</a>
+              </div>
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="col-md-4 col-12">
+            <div class="card shadow-lg mb-5">
+              <img src="../assets/pexels-mithul-varshan-2318990.jpg" class="card-img-top " alt="Adoption">
+              <div class="card-body">
+                <h3 class="card-title">Chief</h3>
+                <p class="card-text">Chief was found in downtown LA. He's such a loving boy, who's ready to find his forever home!
+                  He's great with all dogs and cats, making him a great family dog.
+                                                   </p>
+                <a href="#" class="text-secondary text-decoration-none">Rescued 4 Months ago. </a>
+              </div>
+            </div>
+          </div>
+          <!--Card 3-->
+          <div class="col-md-4 col-12">
+            <div class="card shadow-lg mb-5">
+              <img src="../assets/pexels-w-o-l-f-a-r-t-7811325.jpg" class="card-img-top" alt="Adoption">
+              <div class="card-body">
+                <h3 class="card-title">Daisy</h3>
+                <p class="card-text">Daisy was a fish in her past life! She loves swimming at the beach and being outdoors.
+                  Come see her today! 
+                    
+                </p>
+                <a href="#" class="text-secondary text-decoration-none">Resued one month ago</a>
+              </div>
+            </div>
+          </div>
+          <!--Card 4-->
+          <div class="col-md-4 col-12">
+            <div class="card shadow-lg mb-5">
+              <img src="../assets/pexels-matheus-bertelli-7410722.jpg" class="card-img-top" alt="Adoption">
+              <div class="card-body">
+                <h3 class="card-title">Hector</h3>
+                <p class="card-text">  Hector has the most beautiful blue eyes, I mean how could you say no to such a face? Take
+                  him home so he can eat all the treats!
+                </p>
+                <a href="#" class="text-secondary text-decoration-none">Rescued two weeks ago</a>
+              </div>
+            </div>
+          </div>
+
+          <!--Card 5-->
+          <div class="col-md-4 col-12">
+            <div class="card shadow-lg mb-5">
+              <img src="../assets/pexels-adam-kontor-333083.jpg" class="card-img-top" alt="Adoption">
+              <div class="card-body">
+                <h3 class="card-title">Tex</h3>
+                <p class="card-text">Tex has his guard up at first, but once its down, He'll walk through fire for you.
+                  He's the ultimate protector.
+        
+                </p>
+                <a href="#" class="text-secondary text-decoration-none">Rescued four months ago</a>
+              </div>
+            </div>
+          </div>
+            <!--Card 6-->
+            <div class="col-md-4 col-12">
+              <div class="card shadow-lg mb-5">
+                <img src="../assets/pexels-steshka-willems-1591939.jpg" class="card-img-top" alt="Adoption">
+                <div class="card-body">
+                  <h3 class="card-title">Frank</h3>
+                  <p class="card-text"> If you thought about Men in Black, you thought correctly! He always has something to say as well,
+                    just like the pug in the movie.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Rescued one week ago</a>
+                </div>
+              </div>
+            </div>
+
+             <!--Card 7-->
+             <div class="col-md-4 col-12">
+              <div class="card shadow-lg mb-5">
+                <img src="../assets/pexels-ray-bilcliff-13446978.jpg" class="card-img-top" alt="Adoption">
+                <div class="card-body">
+                  <h3 class="card-title">Lucy</h3>
+                  <p class="card-text"> Lucy is such a sweatheart! She just wants to cuddle and play all day.
+                    You can't say no to that face!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Rescued one months ago</a>
+                </div>
+              </div>
+            </div>
+
+             <!--Card 8-->
+             <div class="col-md-4 col-12">
+              <div class="card shadow-lg mb-5">
+                <img src="../assets/pexels-kelvin-valerio-617278.jpg" class="card-img-top" alt="Adoption">
+                <div class="card-body bottom-0">
+                  <h3 class="card-title">Hulk</h3>
+                  <p class="card-text"> This is hulk. He's a little shy, but is easily won over by Temptation treats.
+                    Come see him today.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Rescued two months ago</a>
+                </div>
+              </div>
+            </div>
+
+             <!--Card 9-->
+             <div class="col-md-4 col-12">
+              <div class="card shadow-lg mb-5">
+                <img src="../assets/cat-1045782__340.jpg" class="card-img-top" alt="Adoption">
+                <div class="card-body">
+                  <h3 class="card-title">John Snow</h3>
+                  <p class="card-text"> If you are looking for someone to watch Game Of Thrones with! Look no further. 
+                    John will cuddle with you all night!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Rescued one months ago</a>
+                </div>
+              </div>
+            </div>
+           
+          
+
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+       
+
+            
+
+        
+       
+          
+    </main>
+
+    <footer style="background-color: #25bfcd;">
+<div class="container-fluid p-0">
+    <div class="row text-left">
+        <div class="col-md-5 col-md-5">
+        <h1 class="text-dark">About Us</h1>
+        <p class="text-muted">
+            We are a non-kill shelter! Every animal will find a home.
+        </p>
+        <p class="pt-4 text-muted">
+         Copyright @2023 All rights reserved | This website was made by <span>Jerred Gomez</span>.
+        </p>
+        </div>
+        <div class="col-md-5 text-center">
+            <h4 class="text-dark">Subscriber List</h4>
+            <p class="text-muted">Recieve Email Updates</p>
+            <form class="form-inline">
+                <div class="col pl-">
+                    <div class="input-group pr-5">
+                        <input type = "text" class="form-control bg-dark text-white" placeholder="Email">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <i class="fa-solid fa-circle-arrow-right"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2">
+            <h4 class="text-dark">Follow Us</h4>
+            <p class="text-muted"> Connect with us on social media</p>
+        </div>
+    </div>
+   </div>
+ </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
+</script>
+<script src="https://kit.fontawesome.com/dad6b99985.js" crossorigin="anonymous">
+
+</script>
+<script src="../code.js/index.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownToggle = dropdown.querySelector(".dropdown-toggle");
+    const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+    dropdownToggle.addEventListener("click", function(event) {
+      event.preventDefault();
+      dropdownMenu.classList.toggle("show");
+    });
+  });
+</script>
+
+    
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerred & Friends</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/dad6b99985.css" crossorigin="anonymous">
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+
+
+.login {
+    margin-top: 150px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  padding: 20px;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+
+.login h2 {
+  margin-top: 0;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login .input-group {
+  margin-bottom: 20px;
+}
+
+.login .input-group-addon {
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+}
+
+.login .form-control {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.login button {
+  background-color: #25bfcd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login button:hover {
+  background-color: #2098ab;
+}
+
+body{
+    background-image: url(/assets/360_F_228670737_QtftGXJAHbLmN4IerXpNqCbuSk1mncX3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+    </style>
+    
+  
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg ">
+                  <a class="navbar-brand" href="#">Jerred & Friends</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="mr-auto">
+
+                    </div>
+
+                    </div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="adoption.html">Adopt</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Donate.html">Donate</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Animal Health
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="https://www.understandinganimalresearch.org.uk/news/why-vaccinate-your-pets">Vaccinations</a></li>
+                          <li><a class="dropdown-item" href="#">Spay/Neuter</a></li>
+                          <li><a class="dropdown-item" href="#">Nutrition</a></li>
+                          <li><a class="dropdown-item" href="#">Exercise</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="Sponsors.html">Sponsors</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Admin-login.html">Admin Login</a>
+                      </li>
+
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              
+
+
+              </header>
+
+              <div class="login">
+                <div class="heading">
+                  <h2>Admin Login</h2>
+                  <form action="#" onsubmit="return validateForm()">
+                    <div class="input-group input-group-lg">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input type="text" class="form-control" id="username" placeholder="Username or email">
+                    </div>
+                    <div class="input-group input-group-lg">
+                      <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="float">Login</button>
+                  </form>
+                </div>
+              </div>
+
+
+              <script>
+                function validateForm() {
+                  // Get the values from the form inputs
+                  const username = document.getElementById("username").value.trim();
+                  const password = document.getElementById("password").value.trim();
+              
+                  // Define regular expressions to validate username and password
+                  const usernameRegex = /^[a-zA-Z0-9._-]{3,20}$/;
+                  const passwordRegex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!])(?=\S+$).{8,20}$/;
+              
+                  // Test the values against the regular expressions
+                  const usernameIsValid = usernameRegex.test(username);
+                  const passwordIsValid = passwordRegex.test(password);
+              
+                  // If either value is invalid, prevent form submission and display error messages
+                  if (!usernameIsValid || !passwordIsValid) {
+                    if (!usernameIsValid) {
+                      alert("Please enter a valid username (3-20 characters, alphanumeric, dot, underscore, or hyphen).");
+                    }
+                    if (!passwordIsValid) {
+                      alert("Please enter a valid password (8-20 characters, at least one uppercase letter, one lowercase letter, one digit, and one special character).");
+                    }
+                    return false;
+                  }
+              
+                  // Otherwise, allow form submission
+                  return true;
+                }
+              </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const dropdown = document.querySelector(".dropdown");
+      const dropdownToggle = dropdown.querySelector(".dropdown-toggle");
+      const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+  
+      dropdownToggle.addEventListener("click", function(event) {
+        event.preventDefault();
+        dropdownMenu.classList.toggle("show");
+      });
+    });
+  </script>
+
+
+              </body>
+
+</html>
