@@ -1,6 +1,7 @@
 [Jerred & Friends]
 This is the official repository for Jerred & Friends. Jerred & Friends is a passion project of mine. It is a pet
-adoption website for a shelter that I hope to grow in to a real business one day. This was built using HTML, CSS, JavaScript, and Bootstrap 5.
+adoption website for a shelter that I hope to grow in to a real business one day. This was built using HTML, CSS, JavaScript, and Bootstrap 5. I will be adding backend 
+Java code soon in conjunction with springMVC and MySQL . 
 
 [Table of Contents]
 Features
@@ -19,9 +20,15 @@ Success stories: The website showcases happy adoption stories and updates from p
 
 
 [Technologies Used]
+Java
+Spring framework 
+MySQL 
 HTML
 CSS
 JavaScript
-Bootstrap 5
-Installation and Usage
+Bootstrap
+
+
+
+Installation 
 To use the website, you can visit [Website URL]. Alternatively, you can clone this repository to your local machine and open the index.html file in your preferred browser.
